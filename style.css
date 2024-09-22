@@ -1,0 +1,28 @@
+body{
+    background-color: seagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+    padding: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+}
+
+#captcha{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
