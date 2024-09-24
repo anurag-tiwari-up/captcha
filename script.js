@@ -22,12 +22,10 @@ input.addEventListener('submit',function(event){
     event.preventDefault();
     input_text = document.getElementById('text_input').value;
     let captcha_verification_result = document.getElementById('captcha_verification_result');
-    while(true){
-        if(captcha===input_text){
-            captcha_verification_result.innerText = "sahi hai bhai"
-        }
-        else{
-            captcha_verification_result.innerText = "bhak sasur"
-        }
+    if(captcha===input_text){
+        captcha_verification_result.innerText = "sahi hai bhai"
+    }
+    else{
+        captcha_verification_result.innerText = "bhak sasur"
     }
 })
