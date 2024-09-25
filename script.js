@@ -16,6 +16,8 @@ function generate_captcha(length) {
 }
 
 let input_text;
+let counter=0;
+
 
 let input = document.getElementById('input')
 input.addEventListener('submit',function(event){
@@ -24,8 +26,12 @@ input.addEventListener('submit',function(event){
     let captcha_verification_result = document.getElementById('captcha_verification_result');
     if(captcha===input_text){
         captcha_verification_result.innerText = "sahi hai bhai"
+        counter++;
     }
     else{
         captcha_verification_result.innerText = "bhak sasur"
+        counter--;
     }
+    
+    document.getElementById('score').innerHTML=counter;
 })
