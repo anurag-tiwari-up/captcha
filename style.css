@@ -33,3 +33,7 @@ button{
     font-size: 24px;
     color: #333;
 }
+#text_input{
+    background-color: white;
+    border:0;
+}
